@@ -1,12 +1,12 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button, { IButtonProps } from './index';
+import Input, { IInputProps } from './index';
 
 import '@/scss/index.scss';
 
 export default {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Input',
+  component: Input,
   parameters: {
     componentSubtitle: (
       <>
@@ -25,18 +25,11 @@ export default {
       </>
     ),
   },
-  argTypes: {
-    size: {
-      description: 'button--sm',
-      options: ['sm', 'md'],
-      control: { type: 'select' },
-    },
-  },
 } as Meta;
 
-const Template: Story<IButtonProps> = (args) => <Button {...args} />;
+const Template: Story<IInputProps> = (args) => <Input {...args} />;
 
-export const defaultButton = Template.bind({});
-defaultButton.args = {
-  children: 'Click me!',
+export const defaultInput = Template.bind({});
+defaultInput.args = {
+  placeholder: 'Ваше имя',
 };
