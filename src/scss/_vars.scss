@@ -19,3 +19,22 @@ $primrose: #e1e88f;
 $vista-blue: #89e7af;
 $anakiwa: #90d1ed;
 $wisteria: #c996e9;
+
+// gradient background
+$gradient-background:
+    270deg,
+    $bright-red,
+    $bahia,
+    $eucalyptus,
+    $all-ports,
+    $royal-purple,
+    $royal-purple,
+    $all-ports,
+    $eucalyptus,
+    $bahia,
+    $bright-red;
+
+// fonts
+$graduate: "Graduate", cursive;
+$open-sans: "Open Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
