@@ -8,7 +8,9 @@ const Hero = () => {
     <section className={styles['hero']}>
       <div className="container">
         <div className={styles['hero__inner']}>
-          <Paragraph addClass={styles['hero__pre-title']}>Меня зовут Максим Берёзка</Paragraph>
+          <Paragraph size={'lg'} addClass={styles['hero__pre-title']}>
+            Меня зовут Максим Берёзка
+          </Paragraph>
           <Title addClass={styles['hero__title']} tag={'h1'}>
             Я web-разработчик из города Минска
           </Title>
