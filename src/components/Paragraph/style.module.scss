@@ -1,0 +1,16 @@
+@import "./src/scss/vars";
+@import "./src/scss/mixins";
+
+.paragraph {
+    font-size: 24px;
+    color: $accent;
+
+    &--sm {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &--lg {
+        font-size: 36px;
+    }
+}
