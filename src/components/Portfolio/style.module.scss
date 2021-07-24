@@ -25,8 +25,8 @@
     &__prev,
     &__next {
         position: absolute;
-cursor: pointer;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }

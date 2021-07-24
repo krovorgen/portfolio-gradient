@@ -16,7 +16,6 @@ const Portfolio = () => {
   let swiperSettings = {
     slidesPerView: 3,
     spaceBetween: 40,
-    virtual: true,
     freeMode: true,
     navigation: {
       nextEl: '.portfolio__next',
