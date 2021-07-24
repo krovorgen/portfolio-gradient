@@ -32,7 +32,6 @@ const About: FC = () => {
       back: 'Проектирование любых пользовательских интерфейсов в которых удобство использования так же важно как и внешний вид.',
     },
   ];
-  console.log(mockCardData[0].img);
 
   return (
     <section className={styles['about']}>

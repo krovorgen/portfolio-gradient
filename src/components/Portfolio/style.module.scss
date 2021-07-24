@@ -1,0 +1,32 @@
+.portfolio {
+    margin-bottom: 100px;
+
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__next {
+        right: -68px;
+    }
+
+    &__prev {
+        left: -68px;
+    }
+
+    &__slide {
+        height: 300px;
+        background-color: #ccc;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

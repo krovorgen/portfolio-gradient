@@ -4,8 +4,24 @@
 .about {
     margin-bottom: 100px;
 
+    &__inner {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background-image: url("../../assets/about-bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
     &__title {
-        margin-bottom: 65px;
+        margin-bottom: 70px;
     }
 
     &__wrap {
