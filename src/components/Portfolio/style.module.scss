@@ -17,9 +17,11 @@
         left: -68px;
     }
 
+    &__preview {
+        object-fit: cover;
+    }
+
     &__slide {
-        height: 300px;
-        background-color: #ccc;
     }
 
     &__prev,

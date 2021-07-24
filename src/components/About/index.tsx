@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import Image from 'next/image';
 
 import { Paragraph, Title } from '@/components/index';
 import Bots from './bots.svg';
