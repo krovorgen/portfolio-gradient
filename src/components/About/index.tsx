@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
+import Image from 'next/image';
 
 import { Paragraph, Title } from '@/components/index';
+import Bots from './bots.svg';
+import Ui from './ui.svg';
+import Web from './web.svg';
 
 import styles from './style.module.scss';
 
@@ -11,23 +15,24 @@ const About: FC = () => {
     'Предлагаем, как разработку с нуля, так и уже готовые шаблонные решения с последующим продвижением их в сети. ',
   ];
 
-  const mockCardData: { img: string; front: string; back: string }[] = [
+  const mockCardData: { img: JSX.Element; front: string; back: string }[] = [
     {
-      img: 'web.svg',
+      img: <Web className={styles['card__img']} />,
       front: 'web-разработка',
       back: 'Воплощение готовых дизайнерских макетов в жизнь, понимание самой процедуры создания сайта требует получение теоретических и практических знаний в области адаптивной и интерактивной верстки. ',
     },
     {
-      img: 'bots.svg',
+      img: <Bots className={styles['card__img']} />,
       front: 'разработка ботов',
       back: 'Чат-бот – это топовый инструмент, с помощью которого можно решить ряд основных вопросов компании. Эти вопросы касаются консультирования, поддержания контактов и увеличения продаж.',
     },
     {
-      img: 'ui.svg',
+      img: <Ui className={styles['card__img']} />,
       front: 'UI|ux дизайн',
       back: 'Проектирование любых пользовательских интерфейсов в которых удобство использования так же важно как и внешний вид.',
     },
   ];
+  console.log(mockCardData[0].img);
 
   return (
     <section className={styles['about']}>
@@ -48,7 +53,7 @@ const About: FC = () => {
             {mockCardData.map((item, index) => (
               <li key={index} className={styles['card']}>
                 <div className={`${styles['card__wrapper']} ${styles['card__front']}`}>
-                  <img className={styles['card__img']} src={`./${item.img}`} alt="" />
+                  {item.img}
                   <p className={styles['card__title']}>{item.front}</p>
                 </div>
                 <div className={`${styles['card__wrapper']} ${styles['card__back']}`}>
