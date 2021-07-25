@@ -57,20 +57,16 @@
         height: 11px;
         background-image: linear-gradient($gradient-background);
         background-size: 200%;
-        animation: animate 15s ease infinite;
+        animation: animate 15s cubic-bezier(1, 1, 0, 0) infinite;
     }
 }
 
 @keyframes animate {
     0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
+        background-position: 0;
     }
 
     100% {
-        background-position: 0 0;
+        background-position: 400%;
     }
 }
