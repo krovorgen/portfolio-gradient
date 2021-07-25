@@ -1,13 +1,13 @@
 import React, { FC, useState } from 'react';
 
 import { Modal } from '@/components/index';
-import { SliderMockDataType } from '@/components/organisms/Portfolio';
+import { SliderContentType } from '../../../types';
 
 import styles from './style.module.scss';
 
 interface IModalWorkProps {
   count: number;
-  sliderMockData: SliderMockDataType[];
+  sliderMockData: SliderContentType[];
 }
 
 const ModalWork: FC<IModalWorkProps> = ({ count, sliderMockData }) => {

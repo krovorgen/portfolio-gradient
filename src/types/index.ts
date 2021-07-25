@@ -1,4 +1,4 @@
-type SliderContentType = {
+export type SliderContentType = {
   img: string;
   link: string;
 };
