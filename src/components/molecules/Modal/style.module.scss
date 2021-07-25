@@ -21,6 +21,10 @@
         max-width: 1390px;
         box-shadow: 0 2px 7px rgba(34, 34, 34, 0.5);
         background-color: rgba(#c4c4c4, 0.9);
+
+        &--with-item {
+            padding: 65px 65px 23px;
+        }
     }
 
     &__close {
