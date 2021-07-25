@@ -1,12 +1,14 @@
-import { About, Creative, Header, Hero, Portfolio, Skills } from '@/components/index';
+import { About, Header, Hero, Skills, Slider } from '@/components/index';
+import portfolioMockData from '../data/portfolioMockData';
+import creativeMockData from '../data/creativeMockData';
 
 const Home = () => (
   <>
     <Header />
     <Hero />
     <About />
-    <Portfolio />
-    <Creative />
+    <Slider mockData={portfolioMockData} />
+    <Slider mockData={creativeMockData} />
     <Skills />
   </>
 );

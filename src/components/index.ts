@@ -12,6 +12,5 @@ export { default as Modal } from './molecules/Modal';
 export { default as Header } from './organisms/Header';
 export { default as Hero } from './organisms/Hero';
 export { default as About } from './organisms/About';
-export { default as Portfolio } from './organisms/Portfolio';
-export { default as Creative } from './organisms/Creative';
 export { default as Skills } from './organisms/Skills';
+export { default as Slider } from './organisms/Slider';

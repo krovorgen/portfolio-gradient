@@ -79,9 +79,10 @@ const Skills = () => {
                   src={item.icon}
                   width={100}
                   height={100}
+                  alt={item.title}
                 />
                 <div className={styles['skills__description']}>
-                  <span className={styles['skills__title']}>{item.title}</span>
+                  <p className={styles['skills__pre-title']}>{item.title}</p>
                   <p className={styles['skills__text']}>{item.text}</p>
                 </div>
               </div>
