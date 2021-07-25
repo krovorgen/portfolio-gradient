@@ -1,5 +1,5 @@
-@import "./src/scss/vars";
-@import "./src/scss/mixins";
+@import "../../../scss/vars";
+@import "../../../scss/mixins";
 
 .about {
     margin-bottom: 100px;
@@ -14,7 +14,7 @@
             top: 0;
             width: 50%;
             height: 100%;
-            background-image: url("../../assets/about-bg.jpg");
+            background-image: url("../../../assets/about-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }

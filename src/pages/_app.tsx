@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Rating app</title>
+        <title>Портфолио</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
