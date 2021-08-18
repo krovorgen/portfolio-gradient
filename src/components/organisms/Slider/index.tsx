@@ -35,7 +35,13 @@ const Slider: FC<ISliderProps> = ({ mockData }) => {
         {mockData.title}
       </Title>
       <div className={`container `}>
-        <ModalWork count={mockData.sliderContent.length} sliderMockData={mockData.sliderContent} />
+        {mockData.sliderContent.length > 3 && (
+          <ModalWork
+            count={mockData.sliderContent.length}
+            sliderMockData={mockData.sliderContent}
+          />
+        )}
+
         <div className={styles['slider__container']}>
           <Prev
             className={`

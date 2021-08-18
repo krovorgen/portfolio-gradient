@@ -1,6 +1,7 @@
 import { About, Header, Hero, Skills, Slider } from '@/components/index';
 import portfolioMockData from '../data/portfolioMockData';
 import creativeMockData from '../data/creativeMockData';
+import Cooperation from '@/components/organisms/Cooperation';
 
 const Home = () => (
   <>
@@ -10,6 +11,7 @@ const Home = () => (
     <Slider mockData={portfolioMockData} />
     <Slider mockData={creativeMockData} />
     <Skills />
+    <Cooperation />
   </>
 );
 export default Home;

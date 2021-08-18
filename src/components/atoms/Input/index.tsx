@@ -1,10 +1,17 @@
-import React, { ChangeEvent, DetailedHTMLProps, FC, HTMLAttributes, useState } from 'react';
+import React, {
+  ChangeEvent,
+  DetailedHTMLProps,
+  FC,
+  HTMLAttributes,
+  InputHTMLAttributes,
+  useState,
+} from 'react';
 import classNames from 'classnames';
 
 import styles from './style.module.scss';
 
 export interface IInputProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLInputElement>, HTMLInputElement> {
+  extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
   addClass?: string;
 }
 

@@ -1,10 +1,10 @@
-import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes, DetailedHTMLProps, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import styles from './style.module.scss';
 
 export interface IButtonProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+  extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   addClass?: string;
   size?: 'sm' | 'md';
 }
