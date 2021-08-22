@@ -2,7 +2,7 @@
 @import "../../../scss/mixins";
 
 .skills {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     &__title {
         margin-bottom: 65px;
@@ -16,7 +16,7 @@
 
     &__item {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         width: 48%;
 
         // max-width: 790px;

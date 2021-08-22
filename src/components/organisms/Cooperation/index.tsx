@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import { Button, Input, Paragraph, Title } from '@/components/index';
 
 import styles from './style.module.scss';
+import Image from 'next/image';
 
 const Cooperation: FC = () => {
   function sendEmail(e) {
@@ -22,34 +23,45 @@ const Cooperation: FC = () => {
   }
   return (
     <div className={styles['cooperation']}>
-      <div className="container">
+      <div className="container container--mini">
         <Title addClass={styles['cooperation__title']} tag={'h3'}>
           Сотрудничество
         </Title>
         <div className={styles['cooperation__wrap']}>
-          <Paragraph addClass={styles['cooperation__text']}>
-            Если вас интересует сотрудничество, заполните, пожалуйста, форму и я свяжусь с вами для
-            обсуждения деталей.
-          </Paragraph>
-          <form className={styles['cooperation__form']} onSubmit={sendEmail}>
-            <Input
-              addClass={styles['cooperation__input']}
-              type="text"
-              name="name"
-              placeholder="Ваше имя"
-              required
+          <div className={styles['cooperation__info']}>
+            <Paragraph addClass={styles['cooperation__text']}>
+              Если вас интересует сотрудничество, заполните, пожалуйста, форму и я свяжусь с вами
+              для обсуждения деталей.
+            </Paragraph>
+            <form className={styles['cooperation__form']} onSubmit={sendEmail}>
+              <Input
+                addClass={styles['cooperation__input']}
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+              <Input
+                addClass={styles['cooperation__input']}
+                type="tel"
+                name="phone"
+                placeholder="Ваш номер телефона"
+                required
+              />
+              <Button addClass={styles['cooperation__button']} type={'submit'} size={'sm'}>
+                Связаться
+              </Button>
+            </form>
+          </div>
+          <div className={styles['cooperation__images']}>
+            <Image
+              className={styles['cooperation__img']}
+              src={'/cooperation-bg.jpg'}
+              width={692}
+              height={533}
+              alt={'Slider image'}
             />
-            <Input
-              addClass={styles['cooperation__input']}
-              type="tel"
-              name="phone"
-              placeholder="Ваш номер телефона"
-              required
-            />
-            <Button addClass={styles['cooperation__button']} type={'submit'} size={'sm'}>
-              Связаться
-            </Button>
-          </form>
+          </div>
         </div>
       </div>
     </div>

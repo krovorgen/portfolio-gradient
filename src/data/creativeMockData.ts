@@ -6,7 +6,7 @@ const creativeMockData: PortfolioMockDataType = {
     nextEl: 'creative__next',
     prevEl: 'creative__prev',
   },
-  sliderContent: [{ img: '/creative/gradient-card.jpg', link: '/gradient-border-cards' }],
+  sliderContent: [{ img: '/creative/gradient-card.jpg', link: '/creative/gradient-border-cards' }],
 };
 
 export default creativeMockData;
