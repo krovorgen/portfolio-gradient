@@ -56,7 +56,7 @@ const Cooperation: FC = () => {
           <div className={styles['cooperation__images']}>
             <Image
               className={styles['cooperation__img']}
-              src={'/cooperation-bg.jpg'}
+              src={'/images/cooperation-bg.jpg'}
               width={692}
               height={533}
               alt={'Slider image'}
