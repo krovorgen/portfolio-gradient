@@ -2,37 +2,37 @@
 @import "../../../scss/mixins";
 
 .slider {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 
-    &__title {
-        margin-bottom: 13px;
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__preview {
+    object-fit: cover;
+  }
+
+  &__next {
+    right: -68px;
+  }
+
+  &__prev {
+    left: -68px;
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &[class*="swiper-button-disabled"] {
+      display: none;
     }
-
-    &__container {
-        position: relative;
-    }
-
-    &__preview {
-        object-fit: cover;
-    }
-
-    &__next {
-        right: -68px;
-    }
-
-    &__prev {
-        left: -68px;
-    }
-
-    &__prev,
-    &__next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-
-        &[class*="swiper-button-disabled"] {
-            display: none;
-        }
-    }
+  }
 }

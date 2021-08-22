@@ -1,24 +1,24 @@
 .hero {
-    position: relative;
-    z-index: 0;
-    margin-bottom: 100px;
-    background-image: url("../../../assets/hero-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 100px;
+  background-image: url("../../../assets/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: calc(100vh - 91px);
-    }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 91px);
+  }
 
-    &__pre-title {
-        margin-bottom: 28px;
-    }
+  &__pre-title {
+    margin-bottom: 28px;
+  }
 
-    &__title {
-        margin-bottom: 65px;
-        max-width: 765px;
-    }
+  &__title {
+    margin-bottom: 65px;
+    max-width: 765px;
+  }
 }

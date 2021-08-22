@@ -1,18 +1,18 @@
 body {
-    overflow-x: hidden;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.2;
-    background-color: $background;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: $background;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1670px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1670px;
 
-    &--mini {
-        max-width: 1365px;
-    }
+  &--mini {
+    max-width: 1365px;
+  }
 }

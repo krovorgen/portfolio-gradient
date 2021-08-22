@@ -2,46 +2,46 @@
 @import "../../../scss/mixins";
 
 .modal {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 30;
-    display: flex;
-    background-color: rgba(#000, 0.7);
-    overscroll-behavior: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  background-color: rgba(#000, 0.7);
+  overscroll-behavior: none;
 
-    &__box {
-        position: relative;
-        z-index: 35;
-        margin: auto;
-        padding: 65px;
-        width: 100%;
-        max-width: 1390px;
-        box-shadow: 0 2px 7px rgba(34, 34, 34, 0.5);
-        background-color: rgba(#c4c4c4, 0.9);
+  &__box {
+    position: relative;
+    z-index: 35;
+    margin: auto;
+    padding: 65px;
+    width: 100%;
+    max-width: 1390px;
+    box-shadow: 0 2px 7px rgba(34, 34, 34, 0.5);
+    background-color: rgba(#c4c4c4, 0.9);
 
-        &--with-item {
-            padding: 65px 65px 23px;
-        }
+    &--with-item {
+      padding: 65px 65px 23px;
     }
+  }
 
-    &__close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        width: 28px;
-        height: 28px;
-        border: none;
-        background-image: url("../../../assets/close.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        transition: transform 0.4s ease-in-out;
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-image: url("../../../assets/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    transition: transform 0.4s ease-in-out;
 
-        &:hover {
-            transform: rotate(360deg);
-        }
+    &:hover {
+      transform: rotate(360deg);
     }
+  }
 }

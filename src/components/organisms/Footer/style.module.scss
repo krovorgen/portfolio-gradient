@@ -1,0 +1,71 @@
+@import "../../../scss/vars";
+@import "../../../scss/mixins";
+
+.footer {
+  margin-bottom: 40px;
+  color: #eccff6;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  &__socials {
+    display: flex;
+    margin: auto;
+  }
+
+  &__social {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__link {
+    font-size: 30px;
+
+    &:hover {
+      border-bottom: 1px solid #eccff6;
+    }
+  }
+
+  &__logo {
+    font-family: $graduate;
+    font-size: 36px;
+    color: #eccff6;
+  }
+
+  &__about {
+    margin: auto 0;
+    font-size: 30px;
+  }
+
+  &__politics {
+    border-bottom: 1px solid #eccff6;
+    font-size: 22px;
+    color: #eccff6;
+  }
+}

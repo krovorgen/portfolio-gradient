@@ -2,26 +2,26 @@
 @import "../../../scss/mixins";
 
 .input {
-    padding: 29px 41px 22px;
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 26px;
-    color: $text-dark;
-    background-color: $accent;
+  padding: 29px 41px 22px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 26px;
+  color: $text-dark;
+  background-color: $accent;
 
-    &:hover {
-        padding: 27px 39px 20px;
-        border: 2px solid #bb8acc;
-    }
+  &:hover {
+    padding: 27px 39px 20px;
+    border: 2px solid #bb8acc;
+  }
 
-    &::placeholder {
-        color: $text-hint;
-    }
+  &::placeholder {
+    color: $text-hint;
+  }
 
-    &:focus,
-    &:active {
-        padding: 25px 37px 18px;
-        border: 4px solid #bb8acc;
-    }
+  &:focus,
+  &:active {
+    padding: 25px 37px 18px;
+    border: 4px solid #bb8acc;
+  }
 }

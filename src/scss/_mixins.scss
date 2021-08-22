@@ -1,17 +1,17 @@
 @mixin media($width) {
-    @media only screen and (max-width: $width + "px") {
-        @content;
-    }
+  @media only screen and (max-width: $width + "px") {
+    @content;
+  }
 }
 
 @mixin animationGradient() {
-    @keyframes animate {
-        0% {
-            background-position: 0;
-        }
-
-        100% {
-            background-position: 400%;
-        }
+  @keyframes animate {
+    0% {
+      background-position: 0;
     }
+
+    100% {
+      background-position: 400%;
+    }
+  }
 }

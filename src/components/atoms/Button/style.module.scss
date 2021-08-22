@@ -2,31 +2,31 @@
 @import "../../../scss/mixins";
 
 .button {
-    padding: 30px 64px;
-    width: fit-content;
-    border: 2px solid $button;
-    font-weight: 600;
-    font-size: 34px;
-    text-transform: uppercase;
-    color: $white;
-    background-color: rgba($button, 0.15);
-    transition: background-color 0.3s, border-color 0.3s;
+  padding: 30px 64px;
+  width: fit-content;
+  border: 2px solid $button;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba($button, 0.15);
+  transition: background-color 0.3s, border-color 0.3s;
 
-    &:hover {
-        background-color: rgba($button, 0.25);
-    }
+  &:hover {
+    background-color: rgba($button, 0.25);
+  }
 
-    &:focus,
-    &:active {
-        border-color: rgba($button, 0.7);
-        background-color: rgba($button, 0.1);
-    }
+  &:focus,
+  &:active {
+    border-color: rgba($button, 0.7);
+    background-color: rgba($button, 0.1);
+  }
 
-    &--sm {
-        padding: 24px 78px;
-        font-weight: 400;
-        font-size: 26px;
-        text-transform: none;
-        color: $accent;
-    }
+  &--sm {
+    padding: 24px 78px;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: none;
+    color: $accent;
+  }
 }

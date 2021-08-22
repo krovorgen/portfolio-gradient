@@ -2,40 +2,40 @@
 @import "../../../scss/mixins";
 
 .modal-work {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 
-    &__inner {
-        text-align: right;
+  &__inner {
+    text-align: right;
+  }
+
+  &__button {
+    border: none;
+    font-size: 24px;
+    color: $accent;
+    background-color: transparent;
+
+    &:hover {
+      text-decoration-line: underline;
     }
+  }
 
-    &__button {
-        border: none;
-        font-size: 24px;
-        color: $accent;
-        background-color: transparent;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -21px;
+  }
 
-        &:hover {
-            text-decoration-line: underline;
-        }
+  &__item {
+    margin: 0 21px 42px;
+    width: calc(100% / 4 - 42px);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 
-    &__items {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -21px;
-    }
-
-    &__item {
-        width: calc(100% / 4 - 42px);
-        margin: 0 21px 42px;
-        transition: transform 0.3s;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-
-    &__preview {
-        object-fit: cover;
-    }
+  &__preview {
+    object-fit: cover;
+  }
 }
