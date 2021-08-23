@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 
 import styles from './style.module.scss';
+import classNames from 'classnames';
 
 const Header: FC = () => {
   const navLinkData: { link: string; href: string }[] = [
@@ -10,6 +11,12 @@ const Header: FC = () => {
     { link: 'Сотрудничество', href: '#' },
   ];
 
+  const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+
+  const appearanceMenu = {
+    [styles['menu__items--active']]: toggleMenu,
+  };
+
   return (
     <header className={styles['header']}>
       <div className="container">
@@ -17,7 +24,7 @@ const Header: FC = () => {
           <a className={styles['logo']} href="#">
             MAKSIM BIAROZKA
           </a>
-          <ul className={styles['menu__items']}>
+          <ul className={classNames(styles['menu__items'], appearanceMenu)}>
             {navLinkData.map((item, index) => (
               <li key={index} className={styles['menu__item']}>
                 <a className={styles['menu__link']} href={item.href}>
@@ -26,6 +33,10 @@ const Header: FC = () => {
               </li>
             ))}
           </ul>
+
+          <button className={styles['menu__button']} onClick={() => setToggleMenu(!toggleMenu)}>
+            Close
+          </button>
         </nav>
       </div>
     </header>
