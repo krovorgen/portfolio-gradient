@@ -54,7 +54,7 @@
       transform: translateY(-1000%);
     }
 
-    &--active {
+    &.active {
       transform: translateY(100%);
     }
   }
@@ -96,12 +96,41 @@
   }
 
   &__button {
-    display: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-    @include media($sm) {
-      position: relative;
-      z-index: 1000;
+    span {
       display: block;
+      margin: 8px auto;
+      width: 50px;
+      height: 5px;
+      background-color: #ecf0f1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.active {
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out;
+      transition-delay: 0.6s;
+
+      span:nth-child(2) {
+        width: 0;
+      }
+
+      span:nth-child(1) {
+        transform: translateY(13px);
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-13px) rotate(90deg);
+      }
+
+      span:nth-child(1),
+      span:nth-child(3) {
+        transition-delay: 0.3s;
+      }
     }
   }
 }

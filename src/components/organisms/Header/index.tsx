@@ -13,8 +13,8 @@ const Header: FC = () => {
 
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
-  const appearanceMenu = {
-    [styles['menu__items--active']]: toggleMenu,
+  const activeClass = {
+    [styles['active']]: toggleMenu,
   };
 
   return (
@@ -24,7 +24,7 @@ const Header: FC = () => {
           <a className={styles['logo']} href="#">
             MAKSIM BIAROZKA
           </a>
-          <ul className={classNames(styles['menu__items'], appearanceMenu)}>
+          <ul className={classNames(styles['menu__items'], activeClass)}>
             {navLinkData.map((item, index) => (
               <li key={index} className={styles['menu__item']}>
                 <a className={styles['menu__link']} href={item.href}>
@@ -34,8 +34,13 @@ const Header: FC = () => {
             ))}
           </ul>
 
-          <button className={styles['menu__button']} onClick={() => setToggleMenu(!toggleMenu)}>
-            Close
+          <button
+            className={classNames(styles['menu__button'], activeClass)}
+            onClick={() => setToggleMenu(!toggleMenu)}
+          >
+            <span />
+            <span />
+            <span />
           </button>
         </nav>
       </div>
