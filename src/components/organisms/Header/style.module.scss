@@ -61,7 +61,6 @@
 
   &__item {
     @include media($sm) {
-      padding: 20px 0;
       background-color: rgba($title, 0.3);
     }
 
@@ -79,6 +78,9 @@
   }
 
   &__link {
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
     border-bottom: 1px solid transparent;
     font-size: 18px;
     line-height: 1.2;

@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
+import classNames from 'classnames';
 
 import styles from './style.module.scss';
-import classNames from 'classnames';
 
 const Header: FC = () => {
   const navLinkData: { link: string; href: string }[] = [
