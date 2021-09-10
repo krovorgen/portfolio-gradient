@@ -6,8 +6,8 @@ import Cooperation from '@/components/organisms/Cooperation';
 const Home = () => (
   <>
     <Header />
-    {/*<Hero />*/}
-    {/*<About />*/}
+    <Hero />
+    <About />
     {/*<Slider mockData={portfolioMockData} />*/}
     {/*<Slider mockData={creativeMockData} />*/}
     {/*<Skills />*/}

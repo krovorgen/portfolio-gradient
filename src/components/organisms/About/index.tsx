@@ -55,7 +55,9 @@ const About: FC = () => {
                   <p className={styles['card__title']}>{item.front}</p>
                 </div>
                 <div className={`${styles['card__wrapper']} ${styles['card__back']}`}>
-                  <Paragraph size={'sm'}>{item.back}</Paragraph>
+                  <Paragraph size={'sm'} addClass={styles['card__text']}>
+                    {item.back}
+                  </Paragraph>
                 </div>
               </li>
             ))}

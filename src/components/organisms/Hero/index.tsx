@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Button, Paragraph, Title } from '@/components/index';
 
 import styles from './style.module.scss';
