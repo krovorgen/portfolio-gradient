@@ -11,7 +11,7 @@ const Footer: FC = () => {
     <footer className={styles['footer']}>
       <div className="container">
         <ul className={styles['footer__container']}>
-          <li className={styles['footer__element']}>
+          <li className={`${styles['footer__element']} ${styles['footer__element--politics']}`}>
             <a className={styles['footer__logo']} href="#">
               MAKSIM BERIOSKA
             </a>
@@ -48,7 +48,7 @@ const Footer: FC = () => {
               </li>
             </ul>
           </li>
-          <li className={styles['footer__element']}>
+          <li className={`${styles['footer__element']} ${styles['footer__element--navigation']}`}>
             <h3 className={styles['footer__title']}>Контакты</h3>
             <ul className="footer__items">
               <li className={styles['footer__item']}>

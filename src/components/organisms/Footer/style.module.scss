@@ -8,22 +8,56 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include media($xl) {
+      flex-wrap: wrap;
+    }
   }
 
   &__element {
     display: flex;
     flex-direction: column;
+
+    @include media($xl) {
+      margin-bottom: 32px;
+      width: 50%;
+    }
+
+    @include media($md) {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      @include media($xl) {
+        margin-right: 0;
+        padding-right: 16px;
+      }
+    }
+
+    &--politics {
+      order: 1;
+    }
   }
 
   &__title {
     margin-bottom: 25px;
     font-weight: 600;
     font-size: 32px;
+
+    @include media($sm) {
+      font-size: 20px;
+    }
   }
 
   &__socials {
     display: flex;
     margin: auto;
+
+    @include media($xl) {
+      margin: 0;
+    }
   }
 
   &__social {
@@ -47,6 +81,10 @@
   &__link {
     font-size: 30px;
 
+    @include media($sm) {
+      font-size: 18px;
+    }
+
     &:hover {
       border-bottom: 1px solid #eccff6;
     }
@@ -56,16 +94,28 @@
     font-family: $graduate;
     font-size: 36px;
     color: #eccff6;
+
+    @include media($md) {
+      display: none;
+    }
   }
 
   &__about {
     margin: auto 0;
     font-size: 30px;
+
+    @include media($md) {
+      display: none;
+    }
   }
 
   &__politics {
-    border-bottom: 1px solid #eccff6;
     font-size: 22px;
+    text-decoration: underline;
     color: #eccff6;
+
+    @include media($sm) {
+      font-size: 15px;
+    }
   }
 }

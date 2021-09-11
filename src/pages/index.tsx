@@ -12,7 +12,7 @@ const Home = () => (
     {/*<Slider mockData={creativeMockData} />*/}
     <Skills />
     <Cooperation />
-    {/*<Footer />*/}
+    <Footer />
   </>
 );
 export default Home;
