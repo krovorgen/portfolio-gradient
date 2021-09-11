@@ -8,6 +8,7 @@ const Home = () => (
     <Header />
     <Hero />
     <About />
+    <div id={'portfolio'} />
     <Slider mockData={portfolioMockData} />
     <Slider mockData={creativeMockData} />
     <Skills />

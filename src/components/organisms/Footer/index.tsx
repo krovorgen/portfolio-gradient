@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import { Link } from 'react-scroll';
 
 import Vk from './vk.svg';
 import Telegram from './telegram.svg';
 import Inst from './inst.svg';
+import { navLinkData } from '../../../data/navLinkData';
 
 import styles from './style.module.scss';
 
@@ -26,26 +28,18 @@ const Footer: FC = () => {
           <li className={styles['footer__element']}>
             <h3 className={styles['footer__title']}>Навигация</h3>
             <ul className="footer__items">
-              <li className={styles['footer__item']}>
-                <a className={styles['footer__link']} href="#">
-                  Обо мне
-                </a>
-              </li>
-              <li className={styles['footer__item']}>
-                <a className={styles['footer__link']} href="#">
-                  Портфолио
-                </a>
-              </li>
-              <li className={styles['footer__item']}>
-                <a className={styles['footer__link']} href="#">
-                  Навыки
-                </a>
-              </li>
-              <li className={styles['footer__item']}>
-                <a className={styles['footer__link']} href="#">
-                  Сотрудничество
-                </a>
-              </li>
+              {navLinkData.map((item, index) => (
+                <li key={index} className={styles['footer__item']}>
+                  <Link
+                    className={styles['footer__link']}
+                    to={item.href}
+                    smooth={true}
+                    duration={500}
+                  >
+                    {item.link}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
           <li className={`${styles['footer__element']} ${styles['footer__element--navigation']}`}>

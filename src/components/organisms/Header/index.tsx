@@ -1,16 +1,12 @@
 import React, { FC, useState } from 'react';
 import classNames from 'classnames';
+import { Link } from 'react-scroll';
+
+import { navLinkData } from '../../../data/navLinkData';
 
 import styles from './style.module.scss';
 
 const Header: FC = () => {
-  const navLinkData: { link: string; href: string }[] = [
-    { link: 'Обо мне', href: '#' },
-    { link: 'Портфолио', href: '#' },
-    { link: 'Навыки', href: '#' },
-    { link: 'Сотрудничество', href: '#' },
-  ];
-
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   const activeClass = {
@@ -27,13 +23,12 @@ const Header: FC = () => {
           <ul className={classNames(styles['menu__items'], activeClass)}>
             {navLinkData.map((item, index) => (
               <li key={index} className={styles['menu__item']}>
-                <a className={styles['menu__link']} href={item.href}>
+                <Link className={styles['menu__link']} to={item.href} smooth={true} duration={500}>
                   {item.link}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-
           <button
             className={classNames(styles['menu__button'], activeClass)}
             onClick={() => setToggleMenu(!toggleMenu)}

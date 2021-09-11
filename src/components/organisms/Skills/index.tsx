@@ -65,7 +65,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className={styles['skills']}>
+    <section className={styles['skills']} id={'skills'}>
       <div className={`container `}>
         <Title addClass={styles['skills__title']} tag={'h3'}>
           Навыки

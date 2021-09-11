@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import { Button, Paragraph, Title } from '@/components/index';
 
@@ -15,7 +16,9 @@ const Hero = () => {
           <Title addClass={styles['hero__title']} tag={'h1'}>
             Я web-разработчик из города Минска
           </Title>
-          <Button size={'md'}>Связаться</Button>
+          <Link to={'cooperation'} smooth={true} duration={500} style={{ width: 'fit-content' }}>
+            <Button size={'md'}>Связаться</Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const About: FC = () => {
   ];
 
   return (
-    <section className={styles['about']}>
+    <section className={styles['about']} id={'about'}>
       <Title addClass={styles['about__title']} tag={'h2'}>
         Обо мне
       </Title>

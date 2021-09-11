@@ -90,6 +90,7 @@
     text-transform: uppercase;
     color: $accent;
     transition: border-color 0.3s;
+    cursor: pointer;
 
     @include media($md) {
       padding: 20px 0;

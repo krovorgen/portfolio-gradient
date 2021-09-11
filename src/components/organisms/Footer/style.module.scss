@@ -84,6 +84,7 @@
 
   &__link {
     font-size: 30px;
+    cursor: pointer;
 
     @include media($sm) {
       font-size: 18px;

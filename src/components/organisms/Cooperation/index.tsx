@@ -40,7 +40,7 @@ const Cooperation: FC = () => {
       );
   }
   return (
-    <div className={styles['cooperation']}>
+    <div className={styles['cooperation']} id={'cooperation'}>
       <div className="container container--mini">
         <Title addClass={styles['cooperation__title']} tag={'h3'}>
           Сотрудничество
