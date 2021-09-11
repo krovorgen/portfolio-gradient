@@ -1,24 +1,42 @@
-import React, { FC } from 'react';
+import React, { ChangeEvent, FC, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import { Button, Input, Paragraph, Title } from '@/components/index';
 import Image from 'next/image';
+import Loader from './loader.svg';
 
 import styles from './style.module.scss';
 
 const Cooperation: FC = () => {
+  const [nameValue, setNameValue] = useState<string>('');
+  const [telValue, setTelValue] = useState<string>('');
+  const [successDispatch, setSuccessDispatch] = useState<boolean>(false);
+  const [sentMessageStatus, setSentMessageStatus] = useState<boolean>(false);
+
+  const nameInputHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    setNameValue(e.currentTarget.value);
+  };
+
+  const telInputHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    setTelValue(e.currentTarget.value);
+  };
+
   function sendEmail(e) {
     e.preventDefault();
-
+    setSentMessageStatus(true);
     emailjs
       .sendForm('service_cpcizsq', 'template_wnz3eom', e.target, 'user_gWCo2gs7F5k0IT2jPNOkQ')
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setNameValue('');
+          setTelValue('');
+          setSentMessageStatus(false);
+          setSuccessDispatch(true);
+          setTimeout(() => {
+            setSuccessDispatch(false);
+          }, 3000);
         },
-        (error) => {
-          console.log(error.text);
-        }
+        () => {}
       );
   }
   return (
@@ -39,6 +57,9 @@ const Cooperation: FC = () => {
                 type="text"
                 name="name"
                 placeholder="Ваше имя"
+                value={nameValue}
+                onChange={nameInputHandler}
+                complete={successDispatch}
                 required
               />
               <Input
@@ -46,11 +67,22 @@ const Cooperation: FC = () => {
                 type="tel"
                 name="phone"
                 placeholder="Ваш номер телефона"
+                value={telValue}
+                onChange={telInputHandler}
+                complete={successDispatch}
                 required
               />
-              <Button addClass={styles['cooperation__button']} type={'submit'} size={'sm'}>
-                Связаться
-              </Button>
+              <div className={styles['cooperation__box']}>
+                <Button
+                  addClass={styles['cooperation__button']}
+                  disabled={sentMessageStatus}
+                  type={'submit'}
+                  size={'sm'}
+                >
+                  Связаться
+                </Button>
+                {sentMessageStatus && <Loader className={styles['cooperation__loader']} />}
+              </div>
             </form>
           </div>
           <div className={styles['cooperation__images']}>

@@ -37,4 +37,13 @@
       padding: 12px;
     }
   }
+
+  &--complete {
+    padding: 25px 37px 18px;
+    border: 4px solid #4a9036;
+
+    @include media($sm) {
+      padding: 12px;
+    }
+  }
 }
