@@ -4,26 +4,57 @@
 .cooperation {
   margin-bottom: 110px;
 
+  @include media($md) {
+    margin-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 65px;
+
+    @include media($sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media($xl) {
+      align-items: flex-start;
+    }
   }
 
   &__info {
     max-width: 555px;
+
+    @include media($xl) {
+      margin-right: 16px;
+    }
   }
 
   &__text {
     margin-bottom: 55px;
+
+    @include media($sm) {
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
   }
 
   &__input {
     margin-bottom: 35px;
+
+    @include media($sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__images {
+    @include media($lg) {
+      display: none;
+    }
   }
 
   &__img {

@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import emailjs from 'emailjs-com';
 
 import { Button, Input, Paragraph, Title } from '@/components/index';
+import Image from 'next/image';
 
 import styles from './style.module.scss';
-import Image from 'next/image';
 
 const Cooperation: FC = () => {
   function sendEmail(e) {

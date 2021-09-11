@@ -8,15 +8,18 @@
   background-image: url("../../../assets/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
   @include media($md) {
-    padding: 80px 0 120px;
     margin-bottom: 50px;
+    padding: 80px 0 120px;
   }
+
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 91px);
+
     @include media($md) {
       height: auto;
     }
@@ -24,19 +27,20 @@
 
   &__pre-title {
     margin-bottom: 28px;
-    @include media($md){
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
 
+    @include media($md) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
   }
 
   &__title {
     margin-bottom: 65px;
     max-width: 765px;
+
     @include media($md) {
-      font-size: 25px;
       margin-bottom: 30px;
+      font-size: 25px;
     }
   }
 }

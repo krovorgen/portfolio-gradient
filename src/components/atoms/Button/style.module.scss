@@ -33,5 +33,10 @@
     font-size: 26px;
     text-transform: none;
     color: $accent;
+
+    @include media($lg) {
+      padding: 15px 35px;
+      font-size: 18px;
+    }
   }
 }

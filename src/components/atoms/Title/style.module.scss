@@ -10,6 +10,11 @@
   text-transform: uppercase;
   color: $pre-title;
 
+  @include media($sm) {
+    font-size: 20px;
+    text-align: left;
+  }
+
   &--h1 {
     font-family: "Graduate", sans-serif;
     font-weight: 400;
@@ -23,9 +28,9 @@
     color: $title;
 
     @include media($md) {
+      padding-left: 10px;
       font-size: 20px;
       text-align: left;
-      padding-left: 10px;
     }
   }
 }

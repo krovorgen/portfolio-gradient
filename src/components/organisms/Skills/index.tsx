@@ -66,10 +66,10 @@ const Skills = () => {
 
   return (
     <section className={styles['skills']}>
-      <Title addClass={styles['skills__title']} tag={'h3'}>
-        Навыки
-      </Title>
       <div className={`container `}>
+        <Title addClass={styles['skills__title']} tag={'h3'}>
+          Навыки
+        </Title>
         <ul className={styles['skills__items']}>
           {skillsMockData.map((item, index) => (
             <li className={styles['skills__item']} key={index}>

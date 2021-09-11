@@ -10,8 +10,8 @@ const Home = () => (
     <About />
     {/*<Slider mockData={portfolioMockData} />*/}
     {/*<Slider mockData={creativeMockData} />*/}
-    {/*<Skills />*/}
-    {/*<Cooperation />*/}
+    <Skills />
+    <Cooperation />
     {/*<Footer />*/}
   </>
 );
