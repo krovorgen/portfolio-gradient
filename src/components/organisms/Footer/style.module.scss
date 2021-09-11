@@ -5,6 +5,10 @@
   margin-bottom: 40px;
   color: #eccff6;
 
+  @include media($sm) {
+    margin-bottom: 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;

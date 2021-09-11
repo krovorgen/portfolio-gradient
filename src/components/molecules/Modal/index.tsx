@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useRef } from 'react';
+import classNames from 'classnames';
 
 import styles from './style.module.scss';
-import classNames from 'classnames';
 
 interface IModalProps {
   callBack: () => void;

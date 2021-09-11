@@ -61,7 +61,6 @@ const Slider: FC<ISliderProps> = ({ mockData }) => {
             />
           )}
         </div>
-
         <div className={styles['slider__container']}>
           <Prev
             className={`

@@ -51,21 +51,21 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 0;
+      top: 77px;
       bottom: 0;
       flex-direction: column;
       text-align: center;
-      transform: translateY(-1000%);
+      transform: translateX(-200%);
     }
 
     &.active {
-      transform: translateY(100%);
+      transform: translateX(0);
     }
   }
 
   &__item {
     @include media($sm) {
-      background-color: rgba($title, 0.3);
+      background-color: rgba($all-ports, 0.95);
     }
 
     &:not(:last-child) {
@@ -83,7 +83,6 @@
 
   &__link {
     display: inline-block;
-    padding: 20px 0;
     width: 100%;
     border-bottom: 1px solid transparent;
     font-size: 18px;
@@ -93,11 +92,20 @@
     transition: border-color 0.3s;
 
     @include media($md) {
+      padding: 20px 0;
       font-size: 16px;
     }
 
     &:hover {
       border-color: $accent;
+
+      @include media($md) {
+        border-color: transparent;
+      }
+
+      @include media($md) {
+        border-color: $accent;
+      }
     }
   }
 

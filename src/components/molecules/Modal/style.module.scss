@@ -9,6 +9,7 @@
   bottom: 0;
   z-index: 30;
   display: flex;
+  overflow-y: overlay;
   background-color: rgba(#000, 0.7);
   overscroll-behavior: none;
 
@@ -24,6 +25,10 @@
 
     &--with-item {
       padding: 65px 65px 23px;
+
+      @include media($md) {
+        padding: 48px 32px 32px;
+      }
     }
   }
 

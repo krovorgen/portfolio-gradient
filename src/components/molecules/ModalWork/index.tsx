@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import { Modal } from '@/components/index';
 import { SliderContentType } from '../../../types';
@@ -17,6 +17,10 @@ const ModalWork: FC<IModalWorkProps> = ({ count, sliderMockData }) => {
   const toggleModalStatus = () => {
     setModalStatus(!modalStatus);
   };
+
+  useEffect(() => {
+    document.body.classList.toggle('body--with-menu', modalStatus);
+  }, [modalStatus]);
 
   return (
     <div className={styles['modal-work']}>

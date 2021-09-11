@@ -7,6 +7,12 @@ body {
   background-color: $background;
 }
 
+.body {
+  &--with-menu {
+    overflow: hidden;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
