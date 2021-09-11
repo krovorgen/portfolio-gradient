@@ -27,20 +27,40 @@ const Slider: FC<ISliderProps> = ({ mockData }) => {
       nextEl: `.${mockData.navigationClass.nextEl}`,
       prevEl: `.${mockData.navigationClass.prevEl}`,
     },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1365: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
   };
 
   return (
     <section className={styles['slider']}>
-      <Title addClass={styles['slider__title']} tag={'h3'}>
-        {mockData.title}
-      </Title>
       <div className={`container `}>
-        {mockData.sliderContent.length > 3 && (
-          <ModalWork
-            count={mockData.sliderContent.length}
-            sliderMockData={mockData.sliderContent}
-          />
-        )}
+        <div className={styles['slider__wrap']}>
+          <Title addClass={styles['slider__title']} tag={'h3'}>
+            {mockData.title}
+          </Title>
+          {mockData.sliderContent.length > 3 && (
+            <ModalWork
+              count={mockData.sliderContent.length}
+              sliderMockData={mockData.sliderContent}
+            />
+          )}
+        </div>
 
         <div className={styles['slider__container']}>
           <Prev

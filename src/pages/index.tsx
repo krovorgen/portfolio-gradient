@@ -8,8 +8,8 @@ const Home = () => (
     <Header />
     <Hero />
     <About />
-    {/*<Slider mockData={portfolioMockData} />*/}
-    {/*<Slider mockData={creativeMockData} />*/}
+    <Slider mockData={portfolioMockData} />
+    <Slider mockData={creativeMockData} />
     <Skills />
     <Cooperation />
     <Footer />

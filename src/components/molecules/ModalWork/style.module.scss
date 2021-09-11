@@ -4,6 +4,10 @@
 .modal-work {
   margin-bottom: 22px;
 
+  @include media($sm) {
+    margin-bottom: 0;
+  }
+
   &__inner {
     text-align: right;
   }
@@ -13,6 +17,11 @@
     font-size: 24px;
     color: $accent;
     background-color: transparent;
+
+    @include media($sm) {
+      font-size: 15px;
+      padding: 0;
+    }
 
     &:hover {
       text-decoration-line: underline;

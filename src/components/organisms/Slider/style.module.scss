@@ -4,8 +4,25 @@
 .slider {
   margin-bottom: 100px;
 
+  @include media($sm) {
+    margin-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 13px;
+  }
+
+  &__wrap {
+    @include media($md) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__container {
@@ -30,6 +47,10 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+
+    @include media($xxl) {
+      display: none;
+    }
 
     &[class*="swiper-button-disabled"] {
       display: none;

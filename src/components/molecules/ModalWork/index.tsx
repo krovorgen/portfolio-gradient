@@ -2,9 +2,9 @@ import React, { FC, useState } from 'react';
 
 import { Modal } from '@/components/index';
 import { SliderContentType } from '../../../types';
+import Image from 'next/image';
 
 import styles from './style.module.scss';
-import Image from 'next/image';
 
 interface IModalWorkProps {
   count: number;
