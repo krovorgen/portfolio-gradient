@@ -14,7 +14,7 @@ const Hero = () => {
             Меня зовут Максим Берёзка
           </Paragraph>
           <Title addClass={styles['hero__title']} tag={'h1'}>
-            Я web-разработчик из города Минска
+            Я&nbsp;web-разработчик из&nbsp;города Москвы
           </Title>
           <Link to={'cooperation'} smooth={true} duration={500} style={{ width: 'fit-content' }}>
             <Button size={'md'}>Связаться</Button>

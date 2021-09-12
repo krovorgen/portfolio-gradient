@@ -48,8 +48,8 @@ const Cooperation: FC = () => {
         <div className={styles['cooperation__wrap']}>
           <div className={styles['cooperation__info']}>
             <Paragraph addClass={styles['cooperation__text']}>
-              Если вас интересует сотрудничество, заполните, пожалуйста, форму и я свяжусь с вами
-              для обсуждения деталей.
+              Если вас интересует сотрудничество, заполните, пожалуйста, форму и&nbsp;я&nbsp;свяжусь
+              с&nbsp;вами для обсуждения деталей.
             </Paragraph>
             <form className={styles['cooperation__form']} onSubmit={sendEmail}>
               <Input

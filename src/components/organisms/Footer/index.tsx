@@ -15,7 +15,7 @@ const Footer: FC = () => {
         <ul className={styles['footer__container']}>
           <li className={`${styles['footer__element']} ${styles['footer__element--politics']}`}>
             <a className={styles['footer__logo']} href="#">
-              MAKSIM BERIOSKA
+              MAKSIM BIAROZKA
             </a>
             <div className={styles['footer__about']}>
               <p>web-разработчик</p>
