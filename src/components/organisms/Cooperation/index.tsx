@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 
 import { Button, Input, Paragraph, Title } from '@/components/index';
 import Image from 'next/image';
-import Loader from './loader.svg';
+import Loader from '../../../assets/loader.svg';
 
 import styles from './style.module.scss';
 

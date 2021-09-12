@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { Link } from 'react-scroll';
 
-import Vk from './vk.svg';
-import Telegram from './telegram.svg';
-import Inst from './inst.svg';
+import Vk from '../../../assets/vk.svg';
+import Telegram from '../../../assets/telegram.svg';
+import Inst from '../../../assets/inst.svg';
 import { navLinkData } from '../../../data/navLinkData';
 
 import styles from './style.module.scss';
