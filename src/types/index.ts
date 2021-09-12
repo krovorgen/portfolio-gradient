@@ -1,6 +1,7 @@
 export type SliderContentType = {
   img: string;
   link: string;
+  type?: 'local' | 'outside';
 };
 
 type NavigationClassType = {

@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Virtual } from 'swiper';
 import Image from 'next/image';
@@ -71,20 +72,34 @@ const Slider: FC<ISliderProps> = ({ mockData }) => {
           <Swiper {...swiperSettings}>
             {mockData.sliderContent.map((item, index) => (
               <SwiperSlide key={index}>
-                <a
-                  className={styles['slider__slide']}
-                  href={item.link}
-                  target={'_blank'}
-                  rel={'noreferrer'}
-                >
-                  <Image
-                    className={styles['slider__preview']}
-                    src={item.img}
-                    width={513}
-                    height={300}
-                    alt={'Slider image'}
-                  />
-                </a>
+                {item.type === 'local' ? (
+                  <Link href={item.link}>
+                    <a className={styles['slider__slide']}>
+                      <Image
+                        className={styles['slider__preview']}
+                        src={item.img}
+                        width={513}
+                        height={300}
+                        alt="Slider image"
+                      />
+                    </a>
+                  </Link>
+                ) : (
+                  <a
+                    className={styles['slider__slide']}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      className={styles['slider__preview']}
+                      src={item.img}
+                      width={513}
+                      height={300}
+                      alt={'Slider image'}
+                    />
+                  </a>
+                )}
               </SwiperSlide>
             ))}
           </Swiper>
