@@ -50,9 +50,9 @@ const Footer: FC = () => {
                   className={styles['footer__link']}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://goo.gl/maps/HtY5PuaA38fjTdWx6"
+                  href="https://goo.gl/maps/D8jKUmeRoAsag6Px8"
                 >
-                  г. Минск, Беларусь
+                  г. Москва, Россия
                 </a>
               </li>
               <li className={styles['footer__item']}>
