@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>Портфолио</title>
         <meta property="og:title" content="Портфолио Максима Берёзки" />
         <meta property="og:locale" content="ru_RU" />
+        <meta property="og:image" content="/images/opengraph.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
