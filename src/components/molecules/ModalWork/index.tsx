@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
-
-import { Modal } from '@/components/index';
-import { SliderContentType } from '../../../types';
 import Image from 'next/image';
+
+import { Modal } from '../Modal';
+import { SliderContentType } from 'types';
 
 import styles from './style.module.scss';
 
