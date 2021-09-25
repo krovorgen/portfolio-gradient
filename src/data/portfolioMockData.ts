@@ -18,7 +18,7 @@ export const portfolioMockData: PortfolioMockDataType = {
     },
     {
       img: '/images/portfolio/social-network.png',
-      link: 'https://krovorgen.github.io/SocialNetwork-React/#/profile',
+      link: 'https://social-network-react.vercel.app/',
     },
     {
       img: '/images/portfolio/asus.jpg',
