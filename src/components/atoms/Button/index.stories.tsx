@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button, { IButtonProps } from './index';
+import { Button, IButtonProps } from './Button';
 
 import '@/scss/index.scss';
 

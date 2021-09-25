@@ -1,7 +1,3 @@
-// atoms
-export { default as Button } from './atoms/Button';
-export { default as Paragraph } from './atoms/Paragraph';
-
 // molecules
 export { default as ModalWork } from './molecules/ModalWork';
 export { default as Modal } from './molecules/Modal';

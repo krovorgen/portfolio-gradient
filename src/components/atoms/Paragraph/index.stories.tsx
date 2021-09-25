@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Paragraph, { IParagraphProps } from './index';
+import { IParagraphProps, Paragraph } from './Paragraph';
 
 import '@/scss/index.scss';
 

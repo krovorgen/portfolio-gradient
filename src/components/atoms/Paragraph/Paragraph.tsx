@@ -9,16 +9,10 @@ export interface IParagraphProps
   size?: 'sm' | 'md' | 'lg';
 }
 
-const Paragraph: FC<IParagraphProps> = ({ addClass, size = 'md', ...props }) => {
+export const Paragraph: FC<IParagraphProps> = ({ addClass, size = 'md', ...props }) => {
   const appearanceList = {
     [styles['paragraph--sm']]: size === 'sm',
     [styles['paragraph--lg']]: size === 'lg',
   };
-  return (
-    <>
-      <p className={classNames(styles['paragraph'], appearanceList, addClass)} {...props} />
-    </>
-  );
+  return <p className={classNames(styles['paragraph'], appearanceList, addClass)} {...props} />;
 };
-
-export default Paragraph;

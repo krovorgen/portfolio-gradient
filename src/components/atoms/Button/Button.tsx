@@ -9,11 +9,9 @@ export interface IButtonProps
   size?: 'sm' | 'md';
 }
 
-const Button: FC<IButtonProps> = ({ addClass, size = 'md', ...props }) => {
+export const Button: FC<IButtonProps> = ({ addClass, size = 'md', ...props }) => {
   const appearanceList = {
     [styles['button--sm']]: size === 'sm',
   };
   return <button className={classNames(styles['button'], appearanceList, addClass)} {...props} />;
 };
-
-export default Button;
