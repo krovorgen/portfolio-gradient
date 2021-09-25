@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Input, { IInputProps } from './index';
+import { Input, IInputProps } from './Input';
 
 import '@/scss/index.scss';
 

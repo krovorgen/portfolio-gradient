@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Title, { ITitleProps } from './index';
+import { Title, ITitleProps } from './Title';
 
 import '@/scss/index.scss';
 

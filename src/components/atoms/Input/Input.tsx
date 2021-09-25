@@ -9,7 +9,7 @@ export interface IInputProps
   complete?: boolean;
 }
 
-const Input: FC<IInputProps> = ({ addClass, complete, ...props }) => {
+export const Input: FC<IInputProps> = ({ addClass, complete, ...props }) => {
   const [inputValue, setInputValue] = useState<string>('');
 
   const onChangeValue = (e: ChangeEvent<HTMLInputElement>) => setInputValue(e.currentTarget.value);
@@ -28,5 +28,3 @@ const Input: FC<IInputProps> = ({ addClass, complete, ...props }) => {
     />
   );
 };
-
-export default Input;

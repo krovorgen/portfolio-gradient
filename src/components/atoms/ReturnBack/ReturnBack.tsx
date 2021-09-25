@@ -5,7 +5,7 @@ import ComeBackSVG from '../../../assets/come-back.svg';
 
 import styles from './style.module.scss';
 
-const ReturnBack = () => {
+export const ReturnBack = () => {
   return (
     <Link href="/" scroll={false}>
       <a className={styles['come-back']}>
@@ -14,5 +14,3 @@ const ReturnBack = () => {
     </Link>
   );
 };
-
-export default ReturnBack;

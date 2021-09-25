@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import { Button, Paragraph, Title } from '@/components/index';
+import { Button, Paragraph } from '@/components/index';
+import { Title } from '@/components/atoms/Title';
 
 import styles from './style.module.scss';
 

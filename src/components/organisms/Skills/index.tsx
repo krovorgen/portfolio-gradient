@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { Title } from '@/components/index';
 import { skillsMockData } from '../../../data/skillsMockData';
+import { Title } from '@/components/atoms/Title';
 
 import styles from './style.module.scss';
 

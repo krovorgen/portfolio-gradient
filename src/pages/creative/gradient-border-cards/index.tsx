@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { ReturnBack } from '@/components/atoms/ReturnBack';
+
 import styles from './gradient-card.module.scss';
-import ReturnBack from '@/components/atoms/ReturnBack';
 
 const GradientCard = () => {
   return (

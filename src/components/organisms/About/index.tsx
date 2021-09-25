@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 
-import { Paragraph, Title } from '@/components/index';
+import { Paragraph } from '@/components/index';
 import { aboutMockData } from '../../../data/aboutMockData';
 import { mockCardInfoData } from '../../../data/mockCardInfoData';
+import { Title } from '@/components/atoms/Title';
 
 import styles from './style.module.scss';
 

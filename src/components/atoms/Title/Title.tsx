@@ -9,11 +9,12 @@ export interface ITitleProps
   tag?: 'h1' | 'h2' | 'h3';
 }
 
-const Title: FC<ITitleProps> = ({ addClass, tag = 'h3', ...props }) => {
+export const Title: FC<ITitleProps> = ({ addClass, tag = 'h3', ...props }) => {
   const appearanceList = {
     [styles['title--h1']]: tag === 'h1',
     [styles['title--h2']]: tag === 'h2',
   };
+
   return (
     <>
       {tag === 'h1' && (
@@ -26,5 +27,3 @@ const Title: FC<ITitleProps> = ({ addClass, tag = 'h3', ...props }) => {
     </>
   );
 };
-
-export default Title;

@@ -1,9 +1,11 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import { Button, Input, Paragraph, Title } from '@/components/index';
+import { Button, Paragraph } from '@/components/index';
 import Image from 'next/image';
 import Loader from '../../../assets/loader.svg';
+import { Input } from '@/components/atoms/Input';
+import { Title } from '@/components/atoms/Title';
 
 import styles from './style.module.scss';
 
