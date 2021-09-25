@@ -1,7 +1,7 @@
 import { About, Footer, Header, Hero, Skills, Slider } from '@/components/index';
-import portfolioMockData from '../data/portfolioMockData';
-import creativeMockData from '../data/creativeMockData';
 import Cooperation from '@/components/organisms/Cooperation';
+import { creativeMockData } from 'data/creativeMockData';
+import { portfolioMockData } from 'data/portfolioMockData';
 
 const Home = () => (
   <>

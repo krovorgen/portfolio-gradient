@@ -1,6 +1,6 @@
 import { PortfolioMockDataType } from '../types';
 
-const creativeMockData: PortfolioMockDataType = {
+export const creativeMockData: PortfolioMockDataType = {
   title: 'Креативы',
   navigationClass: {
     nextEl: 'creative__next',
@@ -14,5 +14,3 @@ const creativeMockData: PortfolioMockDataType = {
     },
   ],
 };
-
-export default creativeMockData;

@@ -1,6 +1,6 @@
 import { PortfolioMockDataType } from '../types';
 
-const portfolioMockData: PortfolioMockDataType = {
+export const portfolioMockData: PortfolioMockDataType = {
   title: 'Портфолио',
   navigationClass: {
     nextEl: 'portfolio__next',
@@ -34,5 +34,3 @@ const portfolioMockData: PortfolioMockDataType = {
     },
   ],
 };
-
-export default portfolioMockData;
