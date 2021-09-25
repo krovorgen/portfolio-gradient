@@ -1,7 +1,3 @@
-// molecules
-export { default as ModalWork } from './molecules/ModalWork';
-export { default as Modal } from './molecules/Modal';
-
 // organisms
 export { default as Header } from './organisms/Header';
 export { default as Hero } from './organisms/Hero';

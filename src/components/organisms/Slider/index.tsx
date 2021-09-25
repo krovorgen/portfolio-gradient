@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 import Next from '../../../assets/next.svg';
 import Prev from '../../../assets/prev.svg';
-import { ModalWork } from '@/components/index';
 import { PortfolioMockDataType } from 'types';
 import { Title } from '@/components/atoms/Title';
+import { ModalWork } from '@/components/molecules/ModalWork';
 
 import styles from './style.module.scss';
 import 'swiper/swiper.min.css';
