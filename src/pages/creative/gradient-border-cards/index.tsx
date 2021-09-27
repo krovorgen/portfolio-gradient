@@ -7,7 +7,7 @@ import styles from './gradient-card.module.scss';
 const GradientCard = () => {
   return (
     <>
-      <div className={styles['gradient-cards']}>
+      <div className={`${styles['gradient-cards']} creative-wrap`}>
         <div className={styles['wrapper']}>
           <div className={styles['wrapper__box']}>
             <span />

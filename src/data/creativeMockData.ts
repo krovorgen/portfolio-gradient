@@ -12,5 +12,15 @@ export const creativeMockData: PortfolioMockDataType = {
       link: '/creative/gradient-border-cards',
       type: 'local',
     },
+    {
+      img: '',
+      link: '/creative/car-rides',
+      type: 'local',
+    },
+    {
+      img: '',
+      link: '/creative/hexagon',
+      type: 'local',
+    },
   ],
 };

@@ -26,6 +26,6 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ['www.codewars.com'],
+    domains: ['www.codewars.com', 'dummyimage.com'],
   },
 };

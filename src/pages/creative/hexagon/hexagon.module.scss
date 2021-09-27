@@ -1,0 +1,50 @@
+.hexagon {
+  min-height: 100vh;
+  background-color: #000;
+
+  &__container {
+    height: 100vh;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+  }
+
+  &__row {
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
+
+    &:nth-child(even) {
+      margin-left: 1px;
+    }
+  }
+
+  &__block {
+    position: relative;
+    margin: 1px 2px;
+    width: 100px;
+    height: 110px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #111;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.02);
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

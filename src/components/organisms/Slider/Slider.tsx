@@ -78,7 +78,11 @@ export const Slider: FC<ISliderProps> = ({ mockData }) => {
                     <a className={styles['slider__slide']}>
                       <Image
                         className={styles['slider__preview']}
-                        src={item.img}
+                        src={
+                          item.img
+                            ? item.img
+                            : 'https://dummyimage.com/600x400/201f24/fff&text=No+image'
+                        }
                         width={513}
                         height={300}
                         alt="Slider image"
@@ -94,7 +98,11 @@ export const Slider: FC<ISliderProps> = ({ mockData }) => {
                   >
                     <Image
                       className={styles['slider__preview']}
-                      src={item.img}
+                      src={
+                        item.img
+                          ? item.img
+                          : 'https://dummyimage.com/600x400/201f24/fff&text=No+image'
+                      }
                       width={513}
                       height={300}
                       alt={'Slider image'}
