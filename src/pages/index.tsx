@@ -11,16 +11,18 @@ import { creativeMockData } from 'data/creativeMockData';
 import { portfolioMockData } from 'data/portfolioMockData';
 
 const Home = () => (
-  <>
+  <div className={'main-wrap'}>
     <Header />
-    <Hero />
-    <About />
-    <div id={'portfolio'} />
-    <Slider mockData={portfolioMockData} />
-    <Slider mockData={creativeMockData} />
-    <Skills />
-    <Cooperation />
+    <main>
+      <Hero />
+      <About />
+      <div id={'portfolio'} />
+      <Slider mockData={portfolioMockData} />
+      <Slider mockData={creativeMockData} />
+      <Skills />
+      <Cooperation />
+    </main>
     <Footer />
-  </>
+  </div>
 );
 export default Home;
