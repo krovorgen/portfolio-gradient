@@ -4,9 +4,9 @@ import Airplane from './airplane.svg';
 import Clouds from './clouds.svg';
 import Forest from './forest.svg';
 import House from './house.svg';
+import { ReturnBack } from '@/components/atoms/ReturnBack';
 
 import styles from './style.module.scss';
-import { ReturnBack } from '@/components/atoms/ReturnBack';
 
 interface CarRidesProps {}
 

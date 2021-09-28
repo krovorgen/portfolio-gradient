@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
-import styles from './hexagon.module.scss';
 import { ReturnBack } from '@/components/atoms/ReturnBack';
+
+import styles from './hexagon.module.scss';
 
 const Hexagon = () => {
   const boxRef = useRef<HTMLDivElement>(null);
