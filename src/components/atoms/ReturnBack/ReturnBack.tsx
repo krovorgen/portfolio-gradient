@@ -7,7 +7,7 @@ import styles from './style.module.scss';
 
 export const ReturnBack = () => {
   return (
-    <Link href="/" scroll={false}>
+    <Link href={'/#portfolio'} scroll={false}>
       <a className={styles['come-back']}>
         <ComeBackSVG />
       </a>

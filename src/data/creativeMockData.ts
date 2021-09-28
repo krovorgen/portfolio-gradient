@@ -13,12 +13,12 @@ export const creativeMockData: PortfolioMockDataType = {
       type: 'local',
     },
     {
-      img: '',
+      img: '/images/creative/car-rides.png',
       link: '/creative/car-rides',
       type: 'local',
     },
     {
-      img: '',
+      img: '/images/creative/hexagon.png',
       link: '/creative/hexagon',
       type: 'local',
     },
