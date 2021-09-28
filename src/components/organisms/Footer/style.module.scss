@@ -2,7 +2,7 @@
 @import "../../../scss/mixins";
 
 .footer {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   color: #eccff6;
 
   @include media($sm) {
