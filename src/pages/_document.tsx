@@ -1,11 +1,11 @@
 import React from 'react';
 import Document, {
-  Html,
   Head,
-  Main,
-  NextScript,
   DocumentContext,
   DocumentInitialProps,
+  Html,
+  Main,
+  NextScript,
 } from 'next/document';
 
 class MyDocument extends Document {

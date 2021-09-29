@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { About } from '@/components/organisms/About';
-import { Cooperation } from '@/components/organisms/Cooperation';
-import { Footer } from '@/components/organisms/Footer';
 import { Header } from '@/components/organisms/Header';
 import { Hero } from '@/components/organisms/Hero';
-import { Skills } from '@/components/organisms/Skills';
+import { About } from '@/components/organisms/About';
 import { Slider } from '@/components/organisms/Slider';
-import { creativeMockData } from 'data/creativeMockData';
-import { portfolioMockData } from 'data/portfolioMockData';
+import { Skills } from '@/components/organisms/Skills';
+import { Cooperation } from '@/components/organisms/Cooperation';
+import { Footer } from '@/components/organisms/Footer';
+import { portfolioMockData } from '../data/portfolioMockData';
+import { creativeMockData } from '../data/creativeMockData';
 
 const Home = () => (
   <div className={'main-wrap'}>
