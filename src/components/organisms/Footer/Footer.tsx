@@ -27,7 +27,7 @@ export const Footer: FC = () => {
           </li>
           <li className={styles['footer__element']}>
             <h3 className={styles['footer__title']}>Навигация</h3>
-            <ul className="footer__items">
+            <ul className={styles['footer__items']}>
               {navLinkData.map((item, index) => (
                 <li key={index} className={styles['footer__item']}>
                   <Link
