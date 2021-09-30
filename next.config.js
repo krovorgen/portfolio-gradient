@@ -11,7 +11,7 @@ const hashOnlyIdent = (context, _, exportName) =>
       ),
       'md4',
       'base64',
-      4
+      3
     )
     .replace(/^(-?\d|--)/, '_$1');
 module.exports = {
