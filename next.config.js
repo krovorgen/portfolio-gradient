@@ -14,6 +14,7 @@ const hashOnlyIdent = (context, _, exportName) =>
       4
     )
     .replace(/^(-?\d|--)/, '_$1');
+
 module.exports = {
   webpack(config, { dev }) {
     const rules = config.module.rules

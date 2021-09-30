@@ -1,0 +1,40 @@
+.wavy-circles {
+  background-color: #181818;
+
+  &__wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: perspective(500px) rotateX(60deg);
+    transform-style: preserve-3d;
+  }
+
+  &__circle {
+    position: absolute;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: animate 3s ease-in-out infinite;
+
+    @for $i from 0 through 15 {
+      &:nth-child(#{$i}) {
+        left: #{$i - 1} + "0px";
+        right: #{$i - 1} + "0px";
+        top: #{$i - 1} + "0px";
+        bottom: #{$i - 1} + "0px";
+        animation-delay: calc(0.1s * #{$i});
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateZ(-100px);
+  }
+
+  50% {
+    transform: translateZ(100px);
+  }
+}

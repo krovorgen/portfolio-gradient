@@ -22,5 +22,10 @@ export const creativeMockData: PortfolioMockDataType = {
       link: '/creative/hexagon',
       type: 'local',
     },
+    {
+      img: '/images/creative/wavy-circles.png',
+      link: '/creative/wavy-circles',
+      type: 'local',
+    },
   ],
 };
