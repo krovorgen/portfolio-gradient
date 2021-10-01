@@ -32,5 +32,10 @@ export const creativeMockData: PortfolioMockDataType = {
       link: '/creative/scroll-text',
       type: 'local',
     },
+    {
+      img: '/images/creative/rain-animation.png',
+      link: '/creative/rain-animation',
+      type: 'local',
+    },
   ],
 };
