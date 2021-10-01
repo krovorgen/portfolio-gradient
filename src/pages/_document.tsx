@@ -18,7 +18,43 @@ class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang={'ru'}>
-        <Head />
+        <Head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function (m, e, t, r, i, k, a) {
+                  m[i] =
+                    m[i] ||
+                    function () {
+                      (m[i].a = m[i].a || []).push(arguments);
+                    };
+                  m[i].l = 1 * new Date();
+                  (k = e.createElement(t)),
+                    (a = e.getElementsByTagName(t)[0]),
+                    (k.async = 1),
+                    (k.src = r),
+                    a.parentNode.insertBefore(k, a);
+                })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+                ym(85718205, 'init', {
+                  clickmap: true,
+                  trackLinks: true,
+                  accurateTrackBounce: true,
+                  webvisor: true,
+                });
+              `,
+            }}
+          />
+          <noscript>
+            <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://mc.yandex.ru/watch/85718205"
+                style={{ position: 'absolute', left: '-9999px' }}
+                alt=""
+              />
+            </div>
+          </noscript>
+        </Head>
         <body>
           <Main />
           <NextScript />
