@@ -27,5 +27,10 @@ export const creativeMockData: PortfolioMockDataType = {
       link: '/creative/wavy-circles',
       type: 'local',
     },
+    {
+      img: '/images/creative/scroll-text.png',
+      link: '/creative/scroll-text',
+      type: 'local',
+    },
   ],
 };
