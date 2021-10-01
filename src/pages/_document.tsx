@@ -44,16 +44,14 @@ class MyDocument extends Document {
               `,
             }}
           />
-          <noscript>
-            <div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://mc.yandex.ru/watch/85718205"
-                style={{ position: 'absolute', left: '-9999px' }}
-                alt=""
-              />
-            </div>
-          </noscript>
+          <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://mc.yandex.ru/watch/85718205"
+              style={{ position: 'absolute', left: '-9999px' }}
+              alt=""
+            />
+          </div>
         </Head>
         <body>
           <Main />
