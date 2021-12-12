@@ -1,7 +1,7 @@
 import { PortfolioMockDataType } from '../types';
 
 export const creativeMockData: PortfolioMockDataType = {
-  title: 'Креативы',
+  title: 'Creative',
   navigationClass: {
     nextEl: 'creative__next',
     prevEl: 'creative__prev',

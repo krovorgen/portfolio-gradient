@@ -7,34 +7,33 @@ import styles from '@/components/organisms/About/style.module.scss';
 export const mockCardInfoData: { img: JSX.Element; front: string; back: JSX.Element }[] = [
   {
     img: <Web className={styles['card__img']} />,
-    front: 'Frontend-разработка',
+    front: 'Frontend',
     back: (
       <>
-        Frontend-разработчик отвечает за&nbsp;внешний вид сайта или мобильного приложения:
-        он&nbsp;верстает шаблоны, красиво оформляет текст и&nbsp;изображения, улучшает
-        взаимодействие пользователя с&nbsp;интерфейсом.
+        A frontend developer is responsible for the appearance of a website or a mobile application:
+        he types up templates, decorates text and images beautifully, and improves user interaction
+        with the interface.
       </>
     ),
   },
   {
     img: <Ui className={styles['card__img']} />,
-    front: 'разработка ботов',
+    front: 'Bot development',
     back: (
       <>
-        Чат-бот&nbsp;&mdash; это топовый инструмент, с&nbsp;помощью которого можно решить ряд
-        основных вопросов компании. Эти вопросы касаются консультирования, поддержания контактов
-        и&nbsp;увеличения продаж.
+        A chatbot is a top-end tool that can help solve a number of basic company issues. These
+        questions relate to consulting, maintaining contacts and increasing sales.
       </>
     ),
   },
   {
     img: <Bots className={styles['card__img']} />,
-    front: 'Backend-разработка',
+    front: 'Backend',
     back: (
       <>
-        Backend-разработка&nbsp;&mdash; это набор аппаратно-программных средств, при помощи которых
-        реализована логика работы сайта. Попросту говоря, это&nbsp;то, что скрыто от&nbsp;глаз
-        пользователя и&nbsp;происходит вне его браузера и&nbsp;компьютера.
+        Backend development is a set of hardware and software that implements the logic of the site.
+        Simply put, this is what is hidden from the user`s eyes and happens outside of his browser
+        and computer.
       </>
     ),
   },

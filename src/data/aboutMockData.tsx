@@ -2,12 +2,11 @@ import React from 'react';
 
 export const aboutMockData: (JSX.Element | string)[] = [
   <>
-    Я&nbsp;молодой разработчик. Заинтересованный активно учиться и&nbsp;развиваться. Живу
-    и&nbsp;работаю между Минском и&nbsp;Москвой.
+    I am a young developer. Interested in actively learning and developing. I live and work between Minsk and Moscow.
   </>,
   <>
-    Создаю сайты с&nbsp;нуля с&nbsp;помощью React + typescript. Активно увлекаюсь вёрсткой.
-    Разрабатываю интерактивные интерфейсы (JS, jQuery). Есть коммерческий опыт. C&nbsp;удовольствием
-    работаю в команде.
+    I create websites from scratch using React + typescript. I am actively fond of layout.
+    I develop interactive interfaces (JS, jQuery). There is a commercial experience. With pleasure
+    I work in a team.
   </>,
 ];

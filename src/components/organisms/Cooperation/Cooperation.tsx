@@ -46,20 +46,20 @@ export const Cooperation: FC = () => {
     <div className={styles['cooperation']} id={'cooperation'}>
       <div className="container container--mini">
         <Title addClass={styles['cooperation__title']} tag={'h3'}>
-          Сотрудничество
+          COOPERATION
         </Title>
         <div className={styles['cooperation__wrap']}>
           <div className={styles['cooperation__info']}>
             <Paragraph addClass={styles['cooperation__text']}>
-              Если вас интересует сотрудничество, заполните, пожалуйста, форму и&nbsp;я&nbsp;свяжусь
-              с&nbsp;вами для обсуждения деталей.
+              If you are interested in cooperation, please fill out the form and I will contact you
+              to discuss the details.
             </Paragraph>
             <form className={styles['cooperation__form']} onSubmit={sendEmail}>
               <Input
                 addClass={styles['cooperation__input']}
                 type="text"
                 name="name"
-                placeholder="Ваше имя"
+                placeholder="Your name"
                 value={nameValue}
                 onChange={nameInputHandler}
                 complete={successDispatch}
@@ -69,7 +69,7 @@ export const Cooperation: FC = () => {
                 addClass={styles['cooperation__input']}
                 type="tel"
                 name="phone"
-                placeholder="Ваш номер телефона"
+                placeholder="your mobile phone"
                 value={telValue}
                 onChange={telInputHandler}
                 complete={successDispatch}
@@ -82,7 +82,7 @@ export const Cooperation: FC = () => {
                   type={'submit'}
                   size={'sm'}
                 >
-                  Связаться
+                  Contact Us
                 </Button>
                 {sentMessageStatus && <Loader className={styles['cooperation__loader']} />}
               </div>

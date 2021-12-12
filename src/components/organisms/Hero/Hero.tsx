@@ -13,13 +13,13 @@ export const Hero = () => {
       <div className="container">
         <div className={styles['hero__inner']}>
           <Paragraph size={'lg'} addClass={styles['hero__pre-title']}>
-            Меня зовут Максим Берёзка
+            {"Hello! I'm Maksim Berezka"}
           </Paragraph>
           <Title addClass={styles['hero__title']} tag={'h1'}>
-            Я&nbsp;web-разработчик из&nbsp;города Москвы
+            {"I'M WEB DEVELOPER FROM MOSCOW"}
           </Title>
           <Link to={'cooperation'} smooth={true} duration={500} style={{ width: 'fit-content' }}>
-            <Button size={'md'}>Связаться</Button>
+            <Button size={'md'}>Contact Us</Button>
           </Link>
         </div>
       </div>

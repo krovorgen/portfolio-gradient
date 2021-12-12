@@ -1,7 +1,7 @@
 import { PortfolioMockDataType } from '../types';
 
 export const portfolioMockData: PortfolioMockDataType = {
-  title: 'Портфолио',
+  title: 'Portfolio',
   navigationClass: {
     nextEl: 'portfolio__next',
     prevEl: 'portfolio__prev',

@@ -26,7 +26,7 @@ export const ModalWork: FC<IModalWorkProps> = ({ count, sliderMockData }) => {
     <div className={styles['modal-work']}>
       <div className={styles['modal-work__inner']}>
         <button className={styles['modal-work__button']} onClick={toggleModalStatus}>
-          Смотреть все ({count})
+          See all ({count})
         </button>
       </div>
       {modalStatus && (

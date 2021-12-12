@@ -18,7 +18,7 @@ export const Footer: FC = () => {
               MAKSIM BIAROZKA
             </a>
             <div className={styles['footer__about']}>
-              <p>web-разработчик</p>
+              <p>web-developer</p>
               <p>Максим Берёзка</p>
             </div>
             <a className={styles['footer__politics']} target="_blank" rel="noreferrer" href="#">
@@ -26,7 +26,7 @@ export const Footer: FC = () => {
             </a>
           </li>
           <li className={styles['footer__element']}>
-            <h3 className={styles['footer__title']}>Навигация</h3>
+            <h3 className={styles['footer__title']}>Navigation</h3>
             <ul className={styles['footer__items']}>
               {navLinkData.map((item, index) => (
                 <li key={index} className={styles['footer__item']}>
@@ -43,7 +43,7 @@ export const Footer: FC = () => {
             </ul>
           </li>
           <li className={`${styles['footer__element']} ${styles['footer__element--navigation']}`}>
-            <h3 className={styles['footer__title']}>Контакты</h3>
+            <h3 className={styles['footer__title']}>Contact</h3>
             <ul className="footer__items">
               <li className={styles['footer__item']}>
                 <a
@@ -68,7 +68,7 @@ export const Footer: FC = () => {
             </ul>
           </li>
           <li className={styles['footer__element']}>
-            <h3 className={styles['footer__title']}>Связаться со мной</h3>
+            <h3 className={styles['footer__title']}>Social link</h3>
             <ul className={styles['footer__socials']}>
               <li className={styles['footer__social']}>
                 <a

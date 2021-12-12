@@ -11,7 +11,7 @@ export const Skills = () => {
     <section className={styles['skills']} id={'skills'}>
       <div className={`container `}>
         <Title addClass={styles['skills__title']} tag={'h3'}>
-          Навыки
+          Skills
         </Title>
         <div className={styles['skills__codewars']}>
           <Image

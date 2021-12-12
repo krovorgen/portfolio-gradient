@@ -11,12 +11,12 @@ export const About: FC = () => {
   return (
     <section className={styles['about']} id={'about'}>
       <Title addClass={styles['about__title']} tag={'h2'}>
-        Обо мне
+        About
       </Title>
       <div className={`container ${styles['about__inner']}`}>
         <div className={styles['about__wrap']}>
           <Paragraph addClass={styles['about__pre-title']} size={'lg'}>
-            Меня зовут Максим
+              My name is Maks
           </Paragraph>
           {aboutMockData.map((text, index) => (
             <Paragraph key={index} addClass={styles['about__text']}>
