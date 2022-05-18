@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Link } from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll';
+import Link from "next/link";
 
 import Vk from '../../../assets/vk.svg';
 import Telegram from '../../../assets/telegram.svg';
@@ -30,14 +31,14 @@ export const Footer: FC = () => {
             <ul className={styles['footer__items']}>
               {navLinkData.map((item, index) => (
                 <li key={index} className={styles['footer__item']}>
-                  <Link
+                  <LinkScroll
                     className={styles['footer__link']}
                     to={item.href}
                     smooth={true}
                     duration={500}
                   >
                     {item.link}
-                  </Link>
+                  </LinkScroll>
                 </li>
               ))}
             </ul>
@@ -66,7 +67,11 @@ export const Footer: FC = () => {
                 </a>
               </li>
               <li className={styles['footer__item']}>
-                <Link href="/cv.pdf" className={styles['footer__link']}>CV</Link>
+                <Link href="/cv.pdf" passHref>
+                  <a className={styles['footer__link']}>
+                    CV
+                  </a>
+                </Link>
               </li>
             </ul>
           </li>
