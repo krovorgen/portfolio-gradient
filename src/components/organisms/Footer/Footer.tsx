@@ -65,6 +65,9 @@ export const Footer: FC = () => {
                   krovorgen@gmail.com
                 </a>
               </li>
+              <li className={styles['footer__item']}>
+                <Link href="/cv.pdf" className={styles['footer__link']}>CV</Link>
+              </li>
             </ul>
           </li>
           <li className={styles['footer__element']}>
